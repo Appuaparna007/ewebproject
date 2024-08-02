@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row gx-5">
+
+        @for ( item of products; track $index) {
+
+                <div class="card" style="width: 15rem;">
+                    <img src="{{item.image}} " class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.title}}</h5>
+                      <p class="card-text">{{item.description}}</p>
+                      <a routerLink="" class="btn btn-primary">Visit</a>
+                    </div>
+                  </div>
+                
+        }
+    </div>
+</div>
+
